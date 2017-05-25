@@ -10,7 +10,7 @@ def main(current_map, player):
 
 	while(game_on):
 		print("Hello world")
-		game_on = False
+		game_on = True
 
 
 current_map = []
