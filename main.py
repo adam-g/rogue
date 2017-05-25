@@ -1,11 +1,11 @@
 #	This is some kind of class
 
 # Instantiate the player and put him in the first room
-def setup():
+def setup(current_map, player):
 	print("First room")
 
 
-def main():
+def main(current_map, player):
 	game_on = True
 
 	while(game_on):
