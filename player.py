@@ -7,6 +7,3 @@ class player:
 		self.strength = strength
 		self.attacks = attacks
 		self.health = health
-
-	
-    	

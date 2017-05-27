@@ -1,4 +1,7 @@
-#	This is some kind of class
+#This is some kind of class
+import rogue_utility
+import player
+
 
 # Instantiate the player and put him in the first room
 def setup(current_map, player):
@@ -7,13 +10,14 @@ def setup(current_map, player):
 
 def main(current_map, player):
 	game_on = True
+	comm = rogue_utility.command_class(player)
 
-	while(game_on):
+	while(comm.game_running):
 		print("Hello world")
-		game_on = False
+		comm.get_command()
 
 
 current_map = []
-player = None
+player = player.player(strength=1337, attacks=2, health=1000)
 setup(current_map, player)
 main(current_map, player)
